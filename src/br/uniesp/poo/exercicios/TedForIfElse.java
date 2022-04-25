@@ -11,16 +11,21 @@ public class TedForIfElse {
         double somaMasc = 0;
         double mediaMasc;
         double maiorAlt = 0;
-        double menorAlt = 300;
+        double menorAlt = 0;
 
         Scanner scan = new Scanner(System.in);
 
-        for (int i = 0; i<4; i++){
+        for (int i = 0; i<10; i++){
             System.out.println("Entre com o sexo 0 para feminino ou 1 para masculino: ");
             sexo = scan.nextInt();
 
             System.out.println("Entre com a altura: ");
             altura = scan.nextDouble();
+
+            if (i == 0){
+                menorAlt = altura;
+                maiorAlt = altura;
+            }
 
             if (sexo == 0){
                 System.out.println("Pessoa do sexo feminino com " + altura + " de altura.");
