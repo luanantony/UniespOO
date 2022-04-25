@@ -15,7 +15,7 @@ public class TedForIfElse {
 
         Scanner scan = new Scanner(System.in);
 
-        for (int i = 0; i<4; i++){
+        for (int i = 0; i<10; i++){
             System.out.println("Entre com o sexo 0 para feminino ou 1 para masculino: ");
             sexo = scan.nextInt();
 
